@@ -38,7 +38,7 @@ a:hover {
   font-size: 2.5rem;
   font-weight: 300;
   color: var(--red);
-  
+
   color: var(--white-01);
   background-color: var(--red-smooth);
   padding: 1.5rem;
@@ -48,11 +48,7 @@ a:hover {
 .divider-1 {
   height: 1px;
   width: 100vw;
-  background: linear-gradient(
-    270deg, 
-    var(--red-divider),
-    var(--red) 
-  );
+  background: linear-gradient(270deg, var(--red-divider), var(--red));
 
   margin: 7rem 0;
 }
@@ -60,11 +56,7 @@ a:hover {
 .divider-2 {
   height: 1px;
   width: 100vw;
-  background: linear-gradient(
-    270deg, 
-    var(--red),
-    var(--red-divider)
-  );
+  background: linear-gradient(270deg, var(--red), var(--red-divider));
 
   margin: 7rem 0;
 }
@@ -74,7 +66,7 @@ header {
   width: 100vw;
   height: 7rem;
   background-color: var(--white-02);
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,9 +107,76 @@ li {
   list-style: none;
 }
 
-.menu {
+.icon-menu {
   width: 2.5rem;
-  text-decoration: none;
+}
+
+.icon-menu:hover {
+  cursor: pointer;
+}
+
+/*menu show*/
+nav.show .menu {
+  opacity: 1;
+  visibility: visible;
+
+  background-color: var(--white-01);
+
+  height: 100vh;
+  width: 100vw;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  display: grid;
+  place-content: center;
+}
+
+nav.show .menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 25rem;
+  justify-content: center;
+  gap: 4rem;
+}
+
+nav.show a {
+  font-size: 4rem;
+  color: var(--grey);
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav.show .menu a:hover,
+nav .menu a:hover {
+  color: var(--red-smooth);
+  position: relative;
+}
+
+nav.show .menu a::after,
+nav .menu a::after {
+  content: ' ';
+  height: 2px;
+  width: 0%;
+  background-color: var(--red-smooth);
+  position: absolute;
+  left: 0;
+  bottom: -1rem;
+
+  transition: width 0.3s;
+}
+
+nav.show .menu a:hover::after,
+nav .menu a:hover::after {
+  width: 100%;
+}
+
+.icon-close {
+  right: 5rem;
+  width: 2.5rem;
+  z-index: 2;
 }
 
 /*==== main ====*/
@@ -276,34 +335,16 @@ main {
 }
 
 /*clients*/
-
-#clients {
-  gap: 4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
 #clients h2 {
   font-size: 3rem;
   font-weight: bold;
-  text-align: center;
+  margin-bottom: 4rem;
 }
 
-#clients .d-block, .carousel {
+#clients .d-block,
+.carousel {
   width: 38rem;
   height: 27rem;
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-}
-
-@media (max-width: 520px) {
-  .title {
-    display: none;
-  }
-}
-
-@media (min-width: 900px) {
-
 }
