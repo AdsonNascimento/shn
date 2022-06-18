@@ -176,7 +176,18 @@ main {
   width: 38rem;
   position: relative;
   border-radius: 5px;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
+}
+
+#about .sombra {
+  position: absolute;
+  width: 38rem;
+  height: 27rem;
+  background-color: #f51928;
+  z-index: -1;
+  margin-top: -20rem;
+  margin-left: 4.5rem;
+  border-radius: 5px;
 }
 
 #about .text p {
