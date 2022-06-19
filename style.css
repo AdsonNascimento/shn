@@ -43,6 +43,12 @@ a:hover {
   background-color: var(--red-smooth);
   padding: 1.5rem;
   border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  color: var(--white-01);
+  background-color: var(--red);
 }
 
 .divider-1 {
@@ -114,8 +120,19 @@ li {
 .icon-menu:hover {
   cursor: pointer;
 }
+nav .header-links {
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+}
 
 /*menu show*/
+nav.show .header-links {
+  display: show;
+  opacity: 1;
+  visibility: visible;
+}
+
 nav.show .menu {
   opacity: 1;
   visibility: visible;
@@ -173,12 +190,23 @@ nav .menu a:hover::after {
   width: 100%;
 }
 
-.icon-close {
-  right: 5rem;
+nav .icon-close {
   width: 2.5rem;
+  position: fixed;
+  right: 5rem;
+  top: -8rem;
+  transition: top 0.4s;
   z-index: 2;
 }
+ 
+nav.show .icon-close {
+  top: 5rem;
+  transition: top 0.3s;
+}
 
+nav .icon-close:hover {
+  cursor: pointer;
+}
 /*==== main ====*/
 main {
   width: 100vw;
