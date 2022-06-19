@@ -1,11 +1,11 @@
 :root {
   /*==== color ====*/
-  --black: rgb(27, 27, 27);
-  --red: #f51928;
-  --red-smooth: #f83441;
+  --black: #0D0D0D;
+  --red: #F21B2D;
+  --red-smooth: #F25764;
   --red-divider: rgba(248, 52, 65, 0.25);
   --white-01: #ffffff;
-  --white-02: #fcfcfc;
+  --white-02: #F2F2F2;
   --grey: rgb(94, 94, 94);
 
   font-size: 62.5%;
@@ -76,11 +76,17 @@ a:hover {
 header {
   width: 100vw;
   height: 7rem;
-  background-color: var(--white-02);
+  background-color: var(--white-01);
+  box-shadow: 0rem 0rem 2.5rem rgba(0, 0, 0, 0.25);
 
   display: flex;
   justify-content: center;
   align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 nav {
@@ -150,7 +156,7 @@ nav.show .menu {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 2;
 
   display: grid;
   place-content: center;
@@ -201,7 +207,7 @@ nav .icon-close {
   right: 3.5rem;
   top: -8rem;
   transition: top 0.4s;
-  z-index: 2;
+  z-index: 3;
 }
  
 nav.show .icon-close {
@@ -226,7 +232,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 8rem;
+  margin-top: 15rem;
 }
 
 #home h1 {
@@ -438,6 +444,7 @@ main {
   flex-direction: column;
   justify-content: top;
   align-items: center;
+  gap: 4rem;
 
   padding-top: 3rem;
 
@@ -447,7 +454,23 @@ main {
 }
 
 #footer span {
-  background-color: var(--white-01);
+  background-color: var(--white-02);
   color: var(--red);
   font-size: 3rem;
+}
+
+#footer .social {
+  color: var(--white-02);
+  display: flex;
+  gap: 4rem;
+}
+
+#footer .social a {
+  display: inline-block;
+}
+
+#footer svg {
+  color: var(--white-02);
+  height: auto;
+  width: 3rem;
 }
