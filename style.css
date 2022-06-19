@@ -627,6 +627,7 @@ main {
 
   #clients .text-04 {
     margin-bottom: 5rem;
+    margin-left: -34rem;
   }
 
   #clients .cards {
