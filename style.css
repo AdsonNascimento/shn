@@ -8,6 +8,9 @@
   --white-02: #F2F2F2;
   --grey: rgb(94, 94, 94);
 
+  --largura: 30rem;
+  --altura: 23rem;
+
   font-size: 62.5%;
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -244,7 +247,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 40rem;
+  max-width: 40rem;
 }
 
 #home h1 {
@@ -259,8 +262,8 @@ main {
   background-image: url(img/copy.webp);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 24rem;
-  width: 35rem;
+  height: var(--altura);
+  width: var(--largura);
   margin-bottom: 7rem;
   border-radius: 5px;
   position: relative;
@@ -268,8 +271,8 @@ main {
 
 #home .img-01::after {
   content: '';
-  height: 24rem;
-  width: 35rem;
+  height: var(--altura);
+  width: var(--largura);
   background-color: var(--red-smooth);
   position: absolute;
   z-index: -1;
@@ -303,8 +306,8 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 24rem;
-  width: 35rem;
+  height: var(--altura);
+  width: var(--largura);
   border-radius: 5px;
   margin-bottom: 4rem;
   position: relative;
@@ -312,8 +315,8 @@ main {
 
 .img-equipe::after {
   content: ' ';
-  height: 24rem;
-  width: 35rem;
+  height: var(--altura);
+  width: var(--largura);
   background-color: var(--red-smooth);
   position: absolute;
   z-index: -1;
@@ -332,6 +335,10 @@ main {
   margin-top: 2rem;
 }
 
+#servies .text-03 {
+  max-width: 40rem;
+}
+
 #services h2 {
   font-size: 3rem;
   font-weight: bold;
@@ -340,7 +347,7 @@ main {
 #services .text p {
   color: var(--grey);
   margin: 1rem 0;
-  width: 38rem;
+  max-width: 38rem;
 }
 
 #services span {
@@ -415,8 +422,8 @@ main {
 #clients .d-block,
 #clients .carousel,
 #clients .carousel-item img {
-  height: 21rem;
-  width: 32rem;
+  height: var(--altura);
+  width: var(--largura);
   max-height: 27rem;
   max-width: 38rem;
   border-radius: 5px;
@@ -591,7 +598,7 @@ main {
   #services .text-03 p {
     font-size: 1.75rem;
     text-align: center;
-    width: 40rem;
+    max-width: 40rem;
   }
 
   #services .cards {
