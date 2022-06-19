@@ -13,6 +13,16 @@
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  background-color: var(--white-02);
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--red-smooth);
+  border-radius: 10px;
+}
+
 section {
   width: 85%;
   max-width: 1100px;
@@ -249,8 +259,8 @@ main {
   background-image: url(img/copy.webp);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 27rem;
-  max-width: 38rem;
+  height: 24rem;
+  width: 35rem;
   margin-bottom: 7rem;
   border-radius: 5px;
   position: relative;
@@ -258,8 +268,8 @@ main {
 
 #home .img-01::after {
   content: '';
-  max-width: 38rem;
-  height: 27rem;
+  height: 24rem;
+  width: 35rem;
   background-color: var(--red-smooth);
   position: absolute;
   z-index: -1;
@@ -293,8 +303,8 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 27rem;
-  max-width: 38rem;
+  height: 24rem;
+  width: 35rem;
   border-radius: 5px;
   margin-bottom: 4rem;
   position: relative;
@@ -302,8 +312,8 @@ main {
 
 .img-equipe::after {
   content: ' ';
-  height: 27rem;
-  max-width: 38rem;
+  height: 24rem;
+  width: 35rem;
   background-color: var(--red-smooth);
   position: absolute;
   z-index: -1;
@@ -503,7 +513,7 @@ main {
   width: 3.5rem;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
   nav .menu ul{
     display: show;
   }
@@ -515,13 +525,13 @@ main {
   }
 
   #home .img-01 {
-    width: 48rem;
-    height: 32rem;
+    min-width: 48rem;
+    min-height: 32rem;
   }
 
   #home .img-01::after {
-    width: 48rem;
-    height: 32rem;
+    min-width: 48rem;
+    min-height: 32rem;
   }
 
   #home .text-01 {
