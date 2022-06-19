@@ -229,6 +229,14 @@ main {
   margin-top: 15rem;
 }
 
+#home .text-01 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40rem;
+}
+
 #home h1 {
   font-size: 3.5rem;
   font-weight: bold;
@@ -242,7 +250,7 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   height: 27rem;
-  width: 38rem;
+  max-width: 38rem;
   margin-bottom: 7rem;
   border-radius: 5px;
   position: relative;
@@ -250,7 +258,7 @@ main {
 
 #home .img-01::after {
   content: '';
-  width: 38rem;
+  max-width: 38rem;
   height: 27rem;
   background-color: var(--red-smooth);
   position: absolute;
@@ -286,7 +294,7 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   height: 27rem;
-  width: 38rem;
+  max-width: 38rem;
   border-radius: 5px;
   margin-bottom: 4rem;
   position: relative;
@@ -295,7 +303,7 @@ main {
 .img-equipe::after {
   content: ' ';
   height: 27rem;
-  width: 38rem;
+  max-width: 38rem;
   background-color: var(--red-smooth);
   position: absolute;
   z-index: -1;
