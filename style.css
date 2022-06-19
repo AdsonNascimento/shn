@@ -389,6 +389,8 @@ main {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  align-items: center;
+  justify-content: center;
 }
 
 #clients .cards {
@@ -411,9 +413,12 @@ main {
 }
 
 #clients .d-block,
-.carousel {
-  height: 24rem;
-  width: 35rem;
+#clients .carousel,
+#clients .carousel-item img {
+  height: 21rem;
+  width: 32rem;
+  max-height: 27rem;
+  max-width: 38rem;
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 }
@@ -486,7 +491,7 @@ main {
 }
 
 #footer span {
-  background-color: var(--white-02);
+  background-color: var(--white-01);
   color: var(--red);
   font-size: 3rem;
 }
@@ -609,6 +614,15 @@ main {
     justify-content: center;
     gap: 3rem;
     width: 100%;
+  }
+
+  #clients .d-block,
+  #clients .carousel,
+  #clients .carousel-item img {
+    width: 48rem;
+    height: 32rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
   }
 
   #contact {
