@@ -10,6 +10,7 @@
 
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 section {
@@ -131,19 +132,12 @@ li {
 .icon-menu:hover {
   cursor: pointer;
 }
-nav .header-links {
-  visibility: hidden;
-  opacity: 0;
+
+nav .menu ul {
   display: none;
 }
 
 /*menu show*/
-nav.show .header-links {
-  display: show;
-  opacity: 1;
-  visibility: visible;
-}
-
 nav.show .menu {
   opacity: 1;
   visibility: visible;
@@ -276,6 +270,7 @@ main {
 
 #about h2 {
   font-size: 3rem;
+  font-weight: bold;
 }
 
 #about .text p {
@@ -283,11 +278,6 @@ main {
   text-indent: 3rem;
   color: var(--grey);
   margin: 1rem 0;
-}
-
-#about .img-02 {
-  border-radius: 5px;
-  margin-bottom: 4rem;
 }
 
 .img-equipe {
@@ -340,14 +330,19 @@ main {
   font-weight: bold;
 }
 
+#services .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
 #services .card {
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: center;
 
-  height: 32rem;
-  width: 38rem;
+  min-height: 32rem;
   max-width: 38rem;
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
@@ -372,25 +367,41 @@ main {
 }
 
 /*clients*/
-#clients h2 {
+#clients {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+#clients .cards {
+  display: grid;
+  gap: 3rem;
+}
+
+#clients .text-04 {
+  max-width: 45rem;
+}
+
+#clients .text-04 h2 {
   font-size: 3rem;
   font-weight: bold;
 }
 
-#clients p {
+#clients .text-04 p {
   color: var(--grey);
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 #clients .d-block,
 .carousel {
   width: 38rem;
-  height: 27rem;
+  max-height: 27rem;
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 }
+
 #contact {
-  margin-bottom: 10rem;
+  margin-bottom: 7rem;
   display: flex;
   flex-direction: column;
   gap: 6rem;
@@ -408,6 +419,7 @@ main {
 #contact .cont-01 {
   display: grid;
   gap: 2rem;
+  max-width: 40rem;
 }
 
 #contact .cont-01 a.button {
@@ -424,6 +436,8 @@ main {
 #contact .cont-02 {
   display: grid;
   gap: 2rem;
+  max-width: 40rem;
+  height: 17rem;
 }
 
 #contact .cont-02 div {
@@ -473,4 +487,136 @@ main {
   color: var(--white-02);
   height: auto;
   width: 3rem;
+  transition: width 0.3rem;
 }
+
+#footer svg:hover  {
+  color: var(--white-01);
+  width: 3.5rem;
+}
+
+@media (min-width: 900px) {
+  nav .menu ul{
+    display: show;
+  }
+
+  #home {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #home .img-01 {
+    width: 48rem;
+    height: 32rem;
+  }
+
+  #home .img-01::after {
+    width: 48rem;
+    height: 32rem;
+  }
+
+  #home .text-01 {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    width: 40rem;
+  }
+
+  #home .text-01 h1 {
+    text-align: left;
+  }
+
+  #home .text-01 .button {
+    width: 17.5rem;
+  }
+
+  #about {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #about .text-02 {
+    width: 40rem;
+  }
+
+  #about .text-02 h2 {
+    font-size: 4rem;
+  }
+
+  #about .text-02 p {
+    font-size: 1.75rem;
+  }
+
+  #about .img-equipe {
+    width: 48rem;
+    height: 32rem;
+  }
+
+  #about .img-equipe::after {
+    width: 48rem;
+    height: 32rem;
+    left: -2.5rem;
+  }
+
+  #services .text-03 h2 {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  #services .text-03 p {
+    font-size: 1.75rem;
+    text-align: center;
+    width: 40rem;
+  }
+
+  #services .cards {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  #clients {
+    align-items: center;
+  }
+
+  #clients .text-04 {
+    margin-bottom: 5rem;
+  }
+
+  #clients .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+  }
+
+  #contact {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+  }
+
+  #contact .cont-02 {
+    height: 20rem;
+  }
+
+  #contact .cont-02 p {
+    font-size: 1.75rem;
+  }
+
+  #contact .cont-02 img {
+    height: 2.5rem;
+  }
+
+  #footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 8rem;
+    padding-top: 0;
+  }
+ }

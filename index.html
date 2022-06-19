@@ -23,7 +23,7 @@
 <body>
   <header id="header">
     <nav class="">
-      <a href="#" class="logo">Soft House <span>Natal</span></a>
+      <a href="#home" class="logo">Soft House <span>Natal</span></a>
 
       <div class="menu">
         <ul class="header-links">
@@ -31,7 +31,7 @@
           <li><a href="#about" class="title">Sobre</a></li>
           <li><a href="#services" class="title">Serviços</a></li>
           <li><a href="#clients" class="title">Clientes</a></li>
-          <li><a href="#" class="title">Contato</a></li>
+          <li><a href="#contact" class="title">Contato</a></li>
         </ul>
       </div>
 
@@ -44,13 +44,16 @@
 
     <section id="home">
       <div class="img-01"></div>
-      <h1>Solução tecnologica em food services</h1>
-
-      <a href="https://api.whatsapp.com/send?phone=5584999999999&text=Ol%C3%A1%2C%20poderia%20tirar%20minha%20d%C3%BAvida%3F" 
-      class="button"
-      target="_black">
-        fale conosco
-      </a>
+      
+      <div class="text-01">
+        <h1>Solução tecnologica em food services</h1>
+        
+        <a href="https://api.whatsapp.com/send?phone=5584999999999&text=Ol%C3%A1%2C%20poderia%20tirar%20minha%20d%C3%BAvida%3F" 
+        class="button"
+        target="_black">
+          fale conosco
+        </a>
+      </div>
       
     </section>
 
@@ -60,7 +63,7 @@
 
       <div class="img-equipe"></div>
 
-      <div class="text">
+      <div class="text text-02">
         <h2>Sobre nós</h2>
         <p>Somos especialistas em automação comercial, sempre inovando com as tecnologias mais mordernas em softwares de gestão para atender nossos clientes. Assim oferencendo oferecendo a melhor experiencia.</p>
         <p>Tornamos a experiencia do cliente nossa prioridade, oferecendo um suporte de alta qualidade 24hs por dia. Sempre empenhado em ajudar.</p>
@@ -71,11 +74,12 @@
 
     <section id="services">
 
-      <div class="text">
+      <div class="text text-03">
         <h2>Nossos serviços</h2>
         <p>Com mais de 10 anos no mercado, a <span>Soft House</span> já conquistou diversos clientes com seu atendimento diferenciado e soluções sobre medida.</p>
       </div>
 
+      <div class="cards">
       <div class="card">
         <img src="img/conection.svg" alt="conexão" class="icone">
         <div class="description">
@@ -100,27 +104,31 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi earum illo harum rem eum veritatis ipsam voluptatibus ipsa exercitationem<p>
         </div>
       </div>
+      </div>
     </section>
 
     <div class="divider-1"></div>
 
     <section id="clients">
-      <h2>Nossos clientes</h2>
+      <div class="text-05">
+      <div class="text-04">
+        <h2>Nossos clientes</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur aliquam doloribus vero mollitia quis sit officiis quam</p>
+      </div>
 
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur aliquam doloribus vero mollitia quis sit officiis quam</p>
-
+      <div class="cards">
       <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item" data-bs-interval="2500">
+          <div class="carousel-item" data-bs-interval="2000">
             <img src="img/clients-zeh-cozinha.png" class="d-block w-100" alt="zeh cozinha">
           </div>
-          <div class="carousel-item active" data-bs-interval="2000">
+          <div class="carousel-item active" data-bs-interval="3000">
             <img src="img/clients-casa-nacre.png" class="d-block w-100" alt="casa nacre">
           </div>
-          <div class="carousel-item" data-bs-interval="2500">
+          <div class="carousel-item" data-bs-interval="2000">
             <img src="img/clients-hachi.png" class="d-block w-100" alt="hachi">
           </div>
-          <div class="carousel-item" data-bs-interval="2000">
+          <div class="carousel-item" data-bs-interval="3000">
             <img src="img/clients-pittsburg.png" class="d-block w-100" alt="pittsburg">
           </div>
           <div class="carousel-item" data-bs-interval="2000">
@@ -128,7 +136,29 @@
           </div>
         </div>
       </div>
+
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="img/clients-cassol.png" class="d-block w-100" alt="cassol">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="img/clients-zeh-cozinha.png" class="d-block w-100" alt="zeh cozinha">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="img/clients-hachi.png" class="d-block w-100" alt="hachi">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="img/clients-pittsburg.png" class="d-block w-100" alt="pittsburg">
+          </div>
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="img/clients-curva-inbox.png" class="d-block w-100" alt="casa nacre">
+          </div>
+        </div>
+      </div>
     </section>
+    </div>
+    </div>
 
     <div class="divider-2"></div>
 
@@ -143,6 +173,7 @@
           Entrar em contato
         </a>
       </div>
+
       <div class="cont-02">
         <div>
           <img src="img/e-mail.svg" alt="e-mail">
@@ -153,8 +184,8 @@
           <p>(84) 9 9999-9999</p>
         </div>
         <div>
-          <img src="img/gps.svg" alt="local">
-          <p>R. Manoel de Abreu, 1832 - Candelária, Natal - RN, 59065-680</p>
+          <img src="img/gps.svg" alt="endereço">
+          <p>R. Manoel de Abreu, 1832</p>
         </div>
       </div>
     </section>
@@ -162,7 +193,7 @@
   </main>
 
   <footer id="footer">
-    <a href="#" class="logo">Soft House <span>Natal</span></a>
+    <a href="#home" class="logo">Soft House <span>Natal</span></a>
 
     <div class="social">
       <a href="https://www.instagram.com/softhousenatal/" target="_blank">
