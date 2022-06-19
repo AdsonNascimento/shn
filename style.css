@@ -400,6 +400,12 @@ main {
   justify-content: center;
 }
 
+#clients .text-05 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #clients .cards {
   display: grid;
   gap: 3rem;
