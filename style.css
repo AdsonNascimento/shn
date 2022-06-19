@@ -192,7 +192,7 @@ nav .menu a:hover {
 
 nav.show .menu a::after,
 nav .menu a::after {
-  content: ' ';
+  content: '';
   height: 2px;
   width: 0%;
   background-color: var(--red-smooth);
@@ -527,7 +527,15 @@ main {
 
 @media (min-width: 1000px) {
   nav .menu ul{
-    display: show;
+    display: flex;
+  }
+
+  #header .title {
+    font-size: 2rem;
+  }
+
+  #header .icon-menu {
+    display: none;
   }
 
   #home {
